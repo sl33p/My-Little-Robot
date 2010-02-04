@@ -135,7 +135,9 @@ return  $this->db->get('tweets');
 
 function quick_dirty_reply() {
 
-	$message =  "Type \":help\" to get started";//"Your robot has been assigned the machine code x86" ;
+	$message =  "Type \":help\" to get started";
+	
+	//"Your robot has been assigned the machine code x86" ;
 
 	$login = "mylittlerobot:23ape56";
 
