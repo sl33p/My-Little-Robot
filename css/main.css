@@ -20,7 +20,7 @@ article, aside, dialog, figure, footer, header,
 	width: 28em;
 	padding: 0 0.4em;
 	margin: 0 auto;
-	background-color: #AEAEAE;
+	background-color: rgba(255,255,255,0.6);
 }
 
 header

@@ -25,7 +25,22 @@ echo 'done';
 	function quick_dirty_reply(){
 	$this->Tweets->quick_dirty_reply();
 	}
+	
+	function parse()
+	{
+	$this->Tweets->parse_tweets();
+	}
+
+	function followers()
+	{
+	
+	$this->Tweets->save_them_followers();
+	}
+	
+	function convert(){echo base_convert (13, 10, 32 );}
+
 }
+
 
 /* End of file welcome.php */
 /* Location: ./system/application/controllers/welcome.php */
