@@ -46,3 +46,7 @@ $route['scaffolding_trigger'] = "";
 
 /* End of file routes.php */
 /* Location: ./system/application/config/routes.php */
+$route["holding"] = "holdingController";
+$route["holding/([a-zA-Z]+)"] = "holdingController/$1";
+$route["holding/([a-zA-Z]+)/([a-zA-Z0-9 ]+)"] = "holdingController/$1/$2";
+$route["holding/([a-zA-Z]+)/([a-zA-Z0-9 ]+)/([a-zA-Z0-9 ]+)"] = "holdingController/$1/$2/$3";
