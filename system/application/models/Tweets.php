@@ -6,6 +6,7 @@ class Tweets extends Model {
     {
         // Call the Model constructor
         parent::Model();
+        $this->load->library('tweet');
     }
     	
 # . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    
@@ -16,9 +17,10 @@ class Tweets extends Model {
 
   	//$timeline = "http://twitter.com/statuses/friends_timeline.xml?count=200";
   	
-  	$login = "mylittlerobot:23ape56";
-	$timeline = "http://twitter.com/statuses/mentions.xml";
+  //	$login = "mylittlerobot:23ape56";
+//	$timeline = "http://twitter.com/statuses/mentions.xml";
 	
+	$timeline = $this->tweet->search(array('q' => 'robot','rpp'=>'100'));
 	
 	$c = curl_init();
 	
@@ -96,7 +98,7 @@ function save_them_tweets() {
 # . . . . . . . . . . .    
 # 	testing
 
-// echo '<pre>';  print_r($tweet); exit;
+echo '<pre>';  print_r($tweet); exit;
 
 # . . . . . . . . . . .    
 
@@ -145,7 +147,7 @@ $this->db->insert('users', $userdata);
 # . . . . . . . . . . .    
 # 	testing
 
-#echo $testdata; exit;
+echo $testdata; exit;
 
 # . . . . . . . . . . .    
 
