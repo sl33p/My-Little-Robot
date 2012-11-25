@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Preview</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body
+{ /* http://io9.com/photogallery/ericjoyner/1000548179  */
+  background-image: url(/assets/b.jpg);
+}
+ article, aside, dialog, figure, footer, header,
+    hgroup, menu, nav, section
+  {
+    display: block;
+  }
+
+
+  span
+  {
+    background-color: rgba(255,255,255,0.6);
+  }
+
+  section
+  {
+    margin:2em auto;
+    width: 444px;
+
+    background-color: rgba(0,0,0,0.8);
+    padding: 0.5em;
+    overflow: auto;
+    color: rgba(255,255,255,0.8);
+    -webkit-border-radius: 0.1em;
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.5);
+  }
+</style>
+</head>
+<body>
+<section>
+<pre>Last login: <?= date("D M d G:i:s") ?> on ttys001
+MLR:~username $
+
+Type ":help" to get started.
+
+mylittlerobot -c x86
+
+--password
+
+••••••
+
+Your robot has been assigned the machine code x86
+
+--assign powers:
+
+        -s speed
+    -r reach
+    -w weight
+    -h height
+    -e endurance
+    -a affection
+
+10 powers remaining
+
+-s 8
+
+Your robot [x86] has been assigned 8 speed powers
+
+-r 1
+
+Your robot [x86] has been assigned 1 reach power
+
+-e 1
+
+Your robot [x86] has been assigned 1 endurance power
+
+(END)
+
+--x86 has been deployed and is ready to use.
+
+HELP -- Press RETURN for more, or q when done
+
+<span> </span>
+</pre>
+<!-- man  mylittlerobot
+
+NAME
+    mylitterobot - a small robot army
+
+SYNOPSIS
+        @mylittlerobot [- [frs] -[srwhea] @username ]
+  
+
+DESCRIPTION
+    Mylittlerobot is a game, played on twitter,  
+    using a commandline syntax.
+    Each command is addressed to 
+    @mylittlerobot in order to:
+        - Challenge another user
+        - On  gaining  powers;
+          use  powerups,  unlock  badges etc.
+
+-->
+</section>
+
+
+</body>
+</html>
